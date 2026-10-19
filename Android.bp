@@ -376,9 +376,9 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
+                "libbcs",
                 "liblog",
                 "libhidlbase",
-                "qc_bcs_lib",
                 "android.hardware.bluetooth.ranging-V2-ndk",
                 "libc++",
                 "libc",
@@ -582,6 +582,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbcs",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libbcs.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqcbor",
+                "libminksocket_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqtigatekeeper",
     owner: "oneplus",
     strip: {
@@ -635,35 +664,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libc",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "qc_bcs_lib",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/qc_bcs_lib.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqcbor",
-                "libminksocket_vendor",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -3661,37 +3661,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libidv",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libidv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libminksocket_vendor",
-                "libVirtClientInterface",
-                "vendor.qti.qvirt-V2-ndk",
-                "liblog",
-                "libutils",
-                "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libintervmipc",
     owner: "oneplus",
     strip: {
@@ -6273,32 +6242,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqpt",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqpt.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -10815,6 +10758,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.snapdragonServices-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.snapdragonServices-V2-ndk",
     owner: "oneplus",
     strip: {
@@ -14027,7 +13995,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service",
             ],
             shared_libs: [
-                "vendor.qti.snapdragonServices-V2-ndk",
+                "vendor.qti.snapdragonServices-V1-ndk",
                 "vendor.qti.snapdragonServices.qape-V1-ndk",
                 "liblog",
                 "libq-perflog",

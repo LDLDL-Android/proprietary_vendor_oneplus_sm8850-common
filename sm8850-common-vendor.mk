@@ -221,23 +221,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_common_sm8845.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common_sm8845.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_fairladyExfront_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_fairladyExfront_3.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_fairladyfront_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_fairladyfront_3.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_infinitifront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_infinitifront_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_lafafront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_lafafront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_lighthousefront_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_lighthousefront_1.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_macanExFront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_macanExFront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_macanFront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_macanFront_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_swangoosefrontmain_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_swangoosefrontmain_3.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_swangoosefrontsub_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_swangoosefrontsub_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_u9bfront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_u9bfront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_u9front_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_u9front_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
@@ -302,9 +293,9 @@ PRODUCT_PACKAGES += \
     libaudiocorehal.default \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
+    libbcs \
     libqtigatekeeper \
     mbedtls_qti \
-    qc_bcs_lib \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
     vendor.qti.hardware.bluetooth.finder-impl-qti \
@@ -406,7 +397,6 @@ PRODUCT_PACKAGES += \
     libhdrvivid \
     libhwcsensor \
     libidl \
-    libidv \
     libintervmipc \
     libkcl \
     libkernelmanager \
@@ -494,7 +484,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqpt \
     libqrtr \
     libqrtrclient \
     libqseed3 \
@@ -651,6 +640,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.qvirt-V2-ndk \
+    vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices-V2-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
