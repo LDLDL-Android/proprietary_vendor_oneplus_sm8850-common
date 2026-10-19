@@ -30,11 +30,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_cdp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_cdp.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_mtp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_mtp.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_qrd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_qrd.bin \
@@ -54,7 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU1310.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1310.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU13__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU13__.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU880.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU880.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU970.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU970.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU980.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU980.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
@@ -108,7 +105,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service-stock.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service-stock.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
@@ -261,7 +260,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dpAP_full.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_full.mbn \
     vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dpAP_mini.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_mini.mbn \
     vendor/oneplus/sm8850-common/proprietary/vendor/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt430.bin \
@@ -289,12 +287,14 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.ranging@aidl-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
     audio.bluetooth_qti.default \
     libaudiocorehal.default \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
     libbcs \
     libqtigatekeeper \
+    mapper.qti \
     mbedtls_qti \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdigital-dimming \
     libdisp-aba \
+    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdmap_consent_sdk \
@@ -374,6 +375,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdrmutils \
     libdsd2pcm \
     libdtlm \
     libeai_fixed \
@@ -382,9 +384,14 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
+    libfilefinder \
     libgame_enhance \
     libgpt \
+    libgpu_tonemapper \
     libgpudataproducer \
+    libgralloc.qti \
+    libgralloccore \
+    libgrallocutils \
     libgsl \
     libhdcp1prov \
     libhdcp2p2prov \
@@ -395,6 +402,7 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhdrvivid \
+    libhistogram \
     libhwcsensor \
     libidl \
     libintervmipc \
@@ -409,6 +417,7 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libllvm-qgl \
     libloadalgo_stub \
+    libmapperutils \
     libmcs \
     libmdmdetect \
     libmdsprpc \
@@ -441,6 +450,10 @@ PRODUCT_PACKAGES += \
     libperfioctl \
     libperipheral_client \
     libplatformconfig \
+    libpwirisfeature \
+    libpwirishal \
+    libpwirishalwrapper \
+    libpwirishardware_ext \
     libq-perflog \
     libqasr \
     libqc2audio_base \
@@ -469,9 +482,11 @@ PRODUCT_PACKAGES += \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
     libqconfigclient \
+    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
+    libqdutils \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -487,6 +502,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqrtrclient \
     libqseed3 \
+    libqservice \
     libqsh \
     libqsh_ble_pb \
     libqsocket \
@@ -511,11 +527,16 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
+    libsdedrm \
     libsdm-brightnessaware-parser \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmclient \
+    libsdmcore \
+    libsdmdal \
     libsdmextension \
+    libsdmutils \
     libsdsprpc \
     libseclog \
     libsensinghubapi-prop \
@@ -597,6 +618,14 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     qti.video.utils.videobufferlayout \
     sensors.qsh \
+    vendor.pixelworks.hardware.display-V3-ndk \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.display@1.2 \
+    vendor.pixelworks.hardware.feature-V2-ndk \
+    vendor.pixelworks.hardware.feature@1.0 \
+    vendor.pixelworks.hardware.feature@1.1 \
+    vendor.pixelworks.hardware.feature@1.2 \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.diaghal-V1-ndk_vendor \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
@@ -607,6 +636,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.c2pa-V1-ndk \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
+    vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm-V1-ndk \
@@ -734,6 +764,7 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor_audio.xml \
     fm_hci.xml \
     manifest_btaudiocoreservices_qti.xml \
+    mapper.qti-stock.xml \
     qasr_vintf.xml \
     snapdragon_services.xml \
     vendor.qti.MemHal.xml \
@@ -742,6 +773,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth.btavsprovider.xml \
     vendor.qti.hardware.c2pa-aidl-service.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
+    vendor.qti.hardware.display.allocator-service-stock.xml \
+    vendor.qti.hardware.display.demura-service-stock.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.hexlp-service.xml \
     vendor.qti.hardware.minkipcbinder-service.xml \
@@ -785,7 +818,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.c2pa-aidl-service-qti \
     vendor.qti.hardware.capabilityconfigstore-service \
+    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.minkipcbinder@1.0-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.secureprocessor \
