@@ -728,6 +728,7 @@ PRODUCT_PACKAGES += \
     libdisplayfossfeature_nature \
     libdolbydecoderprocessor \
     libdolbyeglcore \
+    libdolbyencoderprocessor \
     libdolbyottcameracontrol \
     libdolbyproxyandroid \
     libdpaservice \
@@ -736,6 +737,7 @@ PRODUCT_PACKAGES += \
     libosenseaidlhalclient \
     libosensenativeproxy_client \
     libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
     libsensorbridge \
     libstc_color_feature \
     com.google.android.widevine.nonupdatable \
