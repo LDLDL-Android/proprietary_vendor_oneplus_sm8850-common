@@ -724,6 +724,7 @@ PRODUCT_PACKAGES += \
     libGaiaClient_vnd \
     libPanelChaplin \
     libc2filterplugin \
+    libdisplayadfr2minfps_qcom \
     libdisplayaidlapis \
     libdisplayfossfeature_nature \
     libdolbydecoderprocessor \
