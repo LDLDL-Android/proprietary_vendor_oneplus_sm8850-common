@@ -13488,6 +13488,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbyencoderprocessor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdolbyencoderprocessor.so",
+            ],
+            shared_libs: [
+                "libdolbyeglcore",
+                "libnativewindow",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyottcameracontrol",
+                "libutils",
+                "libcutils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdolbyottcameracontrol",
     owner: "oneplus",
     strip: {
@@ -13724,6 +13757,44 @@ cc_prebuilt_library_shared {
                 "libdolbydecoderprocessor",
                 "libstagefright_foundation",
                 "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_dolbyencoderfilter",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libqcodec2_dolbyencoderfilter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libqcodec2_platform",
+                "qti.video.utils.videobufferlayout",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyencoderprocessor",
                 "libc++",
                 "libc",
                 "libm",
