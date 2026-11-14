@@ -419,7 +419,6 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libllvm-qgl \
     libloadalgo_stub \
-    libmcs \
     libmdmdetect \
     libmdsprpc \
     libmemgen \
